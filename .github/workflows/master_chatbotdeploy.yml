@@ -18,17 +18,17 @@ jobs:
     - name: Set up Python version
       uses: actions/setup-python@v1
       with:
-        python-version: '3.8'
+        python-version: '3.6'
 
     - name: Build using AppService-Build
       uses: azure/appservice-build@v2
       with:
         platform: python
-        platform-version: '3.8'
+        platform-version: '3.6'
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'chatbotdeploy'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_58af5bc644764902826260251d8673b6 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cee663d8dd7a4efcb64625a6a27ffedd }}
