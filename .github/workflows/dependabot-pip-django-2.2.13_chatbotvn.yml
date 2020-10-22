@@ -31,4 +31,4 @@ jobs:
       with:
         app-name: 'chatbotvn'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9cdd5ed8b2d84b7fb6a9cfcba1796049 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_2cbf9c3e513340bd90f989503d124131 }}
